@@ -70,12 +70,18 @@ def start():
         isStartingFrom = False
     JACK_AMOUNT = int(jack_amount_entry.get())
 
+    starting_amount = 0
+    if start_from_entry.get() == "":
+        starting_amount = 0 
+    else:
+        starting_amount = int(start_from_entry.get())
+
     if jacks_var.get() == 1:
-        do_gj(JACK_AMOUNT+1, isStartingFrom, int(start_from_entry.get()))
+        do_gj(JACK_AMOUNT+1, isStartingFrom, starting_amount)
     elif jacks_var.get() == 2:
-        do_hj(JACK_AMOUNT+1, isStartingFrom, int(start_from_entry.get()))
+        do_hj(JACK_AMOUNT+1, isStartingFrom, starting_amount)
     elif jacks_var.get() == 3:
-        do_dj(JACK_AMOUNT+1, isStartingFrom, int(start_from_entry.get()))
+        do_dj(JACK_AMOUNT+1, isStartingFrom, starting_amount)
 
 def stop():
     root_tk.quit()
