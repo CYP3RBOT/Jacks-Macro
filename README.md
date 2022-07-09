@@ -23,4 +23,4 @@ Steps 2 & 3 create and active a virtual environment, where we'll install the nec
 5. Run this command to begin: `python source/main.py`
 
 - Download python: https://www.python.org/downloads/
-- Download git: https://git-scm.com/download/win
+- Download git: https://git-scm.com/download/win (windows)
